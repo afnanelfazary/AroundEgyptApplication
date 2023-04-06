@@ -27,6 +27,9 @@
 		44762DD829DE08D000F2715E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44762DD729DE08D000F2715E /* HomeViewModel.swift */; };
 		44762DDC29DE0B1F00F2715E /* RecommendedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44762DDB29DE0B1F00F2715E /* RecommendedCollectionViewCell.swift */; };
 		44762DDE29DE0B3F00F2715E /* MostRecentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44762DDD29DE0B3F00F2715E /* MostRecentCollectionViewCell.swift */; };
+		44F5B37229DE84A600EFC712 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B37129DE84A600EFC712 /* CoreDataManager.swift */; };
+		44F5B37429DE857900EFC712 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B37329DE857900EFC712 /* CoreDataModel.swift */; };
+		44F5B37629DE90CA00EFC712 /* HomeViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F5B37529DE90CA00EFC712 /* HomeViewExtension.swift */; };
 		74AD4AD27940106EC96FD7CD /* Pods_AroundEgyptApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE3A08BC748FD09EE2A116 /* Pods_AroundEgyptApplicationTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +75,9 @@
 		44762DD729DE08D000F2715E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		44762DDB29DE0B1F00F2715E /* RecommendedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCollectionViewCell.swift; sourceTree = "<group>"; };
 		44762DDD29DE0B3F00F2715E /* MostRecentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostRecentCollectionViewCell.swift; sourceTree = "<group>"; };
+		44F5B37129DE84A600EFC712 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		44F5B37329DE857900EFC712 /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
+		44F5B37529DE90CA00EFC712 /* HomeViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewExtension.swift; sourceTree = "<group>"; };
 		54DE3A08BC748FD09EE2A116 /* Pods_AroundEgyptApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AroundEgyptApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68006053C14F58916DBC9108 /* Pods-AroundEgyptApplication-AroundEgyptApplicationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundEgyptApplication-AroundEgyptApplicationUITests.release.xcconfig"; path = "Target Support Files/Pods-AroundEgyptApplication-AroundEgyptApplicationUITests/Pods-AroundEgyptApplication-AroundEgyptApplicationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BB0788BF76CB997DB9D1B512 /* Pods_AroundEgyptApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AroundEgyptApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +164,7 @@
 			children = (
 				4469987129DDC63000BD1EF2 /* NetworkingServices */,
 				4469987429DDC99200BD1EF2 /* ExperiencesListModel.swift */,
+				44F5B37329DE857900EFC712 /* CoreDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +182,7 @@
 		441D6EA729DDB85100DE435B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				44F5B37029DE83FA00EFC712 /* CoreDataManager */,
 				441D6EAB29DDB8CE00DE435B /* Urls.swift */,
 			);
 			path = Extension;
@@ -248,6 +256,7 @@
 				44762DDA29DE0AF600F2715E /* MostRecentView */,
 				44762DD929DE0AE400F2715E /* RecommendedView */,
 				441D6EA529DDB6CC00DE435B /* HomeViewController.swift */,
+				44F5B37529DE90CA00EFC712 /* HomeViewExtension.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -266,6 +275,14 @@
 				44762DDD29DE0B3F00F2715E /* MostRecentCollectionViewCell.swift */,
 			);
 			path = MostRecentView;
+			sourceTree = "<group>";
+		};
+		44F5B37029DE83FA00EFC712 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				44F5B37129DE84A600EFC712 /* CoreDataManager.swift */,
+			);
+			path = CoreDataManager;
 			sourceTree = "<group>";
 		};
 		93DF7E37C0BFFBAEA56995F0 /* Pods */ = {
@@ -526,15 +543,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F5B37229DE84A600EFC712 /* CoreDataManager.swift in Sources */,
 				441D6EA629DDB6CC00DE435B /* HomeViewController.swift in Sources */,
 				44762DD829DE08D000F2715E /* HomeViewModel.swift in Sources */,
 				446544ED29DCFC52003078EA /* ViewController.swift in Sources */,
 				44762DDE29DE0B3F00F2715E /* MostRecentCollectionViewCell.swift in Sources */,
+				44F5B37429DE857900EFC712 /* CoreDataModel.swift in Sources */,
 				446544F329DCFC52003078EA /* AroundEgyptApplication.xcdatamodeld in Sources */,
 				4469987329DDC69B00BD1EF2 /* NetworkManager.swift in Sources */,
 				441D6EAC29DDB8CE00DE435B /* Urls.swift in Sources */,
 				44762DDC29DE0B1F00F2715E /* RecommendedCollectionViewCell.swift in Sources */,
 				4469987529DDC99200BD1EF2 /* ExperiencesListModel.swift in Sources */,
+				44F5B37629DE90CA00EFC712 /* HomeViewExtension.swift in Sources */,
 				446544E929DCFC52003078EA /* AppDelegate.swift in Sources */,
 				446544EB29DCFC52003078EA /* SceneDelegate.swift in Sources */,
 			);

@@ -495,7 +495,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RNb-FH-ODF">
-                                                    <rect key="frame" x="17" y="2" width="340" height="138.66666666666666"/>
+                                                    <rect key="frame" x="8" y="2" width="349" height="139"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9P-ci-7ja">
                                                     <rect key="frame" x="16.999999999999996" y="150" width="35.666666666666657" height="19"/>
@@ -539,7 +539,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="RNb-FH-ODF" firstAttribute="centerX" secondItem="9nW-Mn-qPZ" secondAttribute="centerX" constant="4.5" id="1eL-Z9-y72"/>
+                                                <constraint firstItem="RNb-FH-ODF" firstAttribute="centerX" secondItem="9nW-Mn-qPZ" secondAttribute="centerX" id="1eL-Z9-y72"/>
                                                 <constraint firstItem="EAX-5d-xdh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="g9P-ci-7ja" secondAttribute="trailing" constant="8" symbolic="YES" id="4GW-pW-FRH"/>
                                                 <constraint firstItem="kZn-hN-BGt" firstAttribute="leading" secondItem="r2F-3d-lkR" secondAttribute="trailing" constant="4" id="BFv-NN-gaX"/>
                                                 <constraint firstItem="EAX-5d-xdh" firstAttribute="leading" secondItem="9nW-Mn-qPZ" secondAttribute="leading" constant="258" id="Eg1-bw-c04"/>
@@ -548,7 +548,7 @@
                                                 <constraint firstItem="RNb-FH-ODF" firstAttribute="top" secondItem="9nW-Mn-qPZ" secondAttribute="top" constant="2" id="QKL-4B-vHa"/>
                                                 <constraint firstAttribute="bottom" secondItem="EAX-5d-xdh" secondAttribute="bottom" constant="13" id="TPh-iz-Svb"/>
                                                 <constraint firstItem="g9P-ci-7ja" firstAttribute="baseline" secondItem="sCk-bg-1JE" secondAttribute="baseline" id="bFM-OW-j4Y"/>
-                                                <constraint firstItem="g9P-ci-7ja" firstAttribute="leading" secondItem="RNb-FH-ODF" secondAttribute="leading" id="dMN-uw-rLn"/>
+                                                <constraint firstItem="g9P-ci-7ja" firstAttribute="leading" secondItem="RNb-FH-ODF" secondAttribute="leading" constant="8.9999999999999964" id="dMN-uw-rLn"/>
                                                 <constraint firstItem="EAX-5d-xdh" firstAttribute="top" secondItem="RNb-FH-ODF" secondAttribute="bottom" constant="9.3333333333333428" id="hlh-G3-jHx"/>
                                                 <constraint firstItem="sCk-bg-1JE" firstAttribute="leading" secondItem="EAX-5d-xdh" secondAttribute="trailing" constant="-1.9999999999999432" id="j5w-xs-cGd"/>
                                                 <constraint firstAttribute="bottom" secondItem="sCk-bg-1JE" secondAttribute="bottom" constant="10" id="kPa-8B-0c1"/>
@@ -556,7 +556,7 @@
                                                 <constraint firstItem="r2F-3d-lkR" firstAttribute="top" secondItem="RNb-FH-ODF" secondAttribute="bottom" constant="-27.666666666666657" id="owJ-Iq-iIs"/>
                                                 <constraint firstAttribute="trailing" secondItem="RNb-FH-ODF" secondAttribute="trailing" constant="8" id="pXu-4R-ptg"/>
                                                 <constraint firstItem="sCk-bg-1JE" firstAttribute="bottom" secondItem="EAX-5d-xdh" secondAttribute="bottom" constant="3" id="rK8-mc-H0X"/>
-                                                <constraint firstItem="RNb-FH-ODF" firstAttribute="leading" secondItem="r2F-3d-lkR" secondAttribute="trailing" constant="-43" id="ulR-k8-AtH"/>
+                                                <constraint firstItem="RNb-FH-ODF" firstAttribute="leading" secondItem="r2F-3d-lkR" secondAttribute="trailing" constant="-52" id="ulR-k8-AtH"/>
                                                 <constraint firstItem="kZn-hN-BGt" firstAttribute="bottom" secondItem="RNb-FH-ODF" secondAttribute="bottom" constant="-8.9999999999999147" id="x3z-nq-hIs"/>
                                             </constraints>
                                         </collectionViewCellContentView>
