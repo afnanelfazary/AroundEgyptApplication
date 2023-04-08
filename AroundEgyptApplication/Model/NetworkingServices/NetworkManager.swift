@@ -10,6 +10,8 @@ import Alamofire
 
 protocol NetworkMangerProtocol {
     static func fetchData<T : Decodable>( apiLink : String ,complitionHandler: @escaping (T?) -> Void)
+    static  func sendRequest<T: Encodable>(url: String, method: HTTPMethod, parameters: T, completion: @escaping (Bool) -> Void)
+
 }
 
 class NetworkManger : NetworkMangerProtocol {
@@ -29,5 +31,17 @@ class NetworkManger : NetworkMangerProtocol {
         }
         
     }
-    
+ static   func sendRequest<T: Encodable>(url: String, method: HTTPMethod, parameters: T, completion: @escaping (Bool) -> Void) {
+           AF.request(url, method: method, parameters: parameters, encoder: JSONParameterEncoder.default)
+               .validate(statusCode: 200..<300)
+               .responseData { response in
+                   switch response.result {
+                   case .success:
+                       completion(true)
+                   case .failure(let error):
+                       print(error.localizedDescription)
+                       completion(false)
+                   }
+               }
+       }
 }

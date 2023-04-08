@@ -1,6 +1,0 @@
-framework module Pods_AroundEgyptApplicationTests {
-  umbrella header "Pods-AroundEgyptApplicationTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

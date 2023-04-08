@@ -9,57 +9,32 @@ import UIKit
 import Kingfisher
 import Reachability
 import CoreData
+import SwiftUI
 protocol HomeViewProtocol : AnyObject {
     
     func renderRecommendedCollection()
     func renderMostRecentCollection()
-
 }
 class HomeViewController: UIViewController , HomeViewProtocol {
     var homeViewModel : HomeViewModel!
     let reachability = try! Reachability()
+    var x :[NSManagedObject] = []
      @IBOutlet weak var recommendedCollectionView : UICollectionView!
     @IBOutlet weak var mostRecentCollectionView : UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
         homeViewModel = HomeViewModel()
-        
-        homeViewModel.bindResultToHomeView = {[weak self] in
+       
+ homeViewModel.bindResultToHomeView = {[weak self] in
             DispatchQueue.main.async{
                 self?.renderRecommendedCollection()
                 self?.renderMostRecentCollection()
-                
-            }
-        }
-        switch reachability.connection {
-            // INternet
-        case .wifi , .cellular:
-            
-            homeViewModel.getRecommendedExperienceList()
-            homeViewModel.getMostRecentExperienceList()
-            if homeViewModel.recommendedFlag == true
-            {
-                homeViewModel.recommendedItemsCoreDataArr = homeViewModel.recommendedList as! [NSManagedObject]
-                CoreDataManager.insertAllItemsToCoreData(coreDataArr:homeViewModel.recommendedItemsCoreDataArr as! [ItemCoreData])
-            }
-            else
-            {
-                homeViewModel.mostRecentItemsCoreDataArr = homeViewModel.mostRecentList as! [NSManagedObject]
-                CoreDataManager.insertAllItemsToCoreData(coreDataArr:homeViewModel.mostRecentItemsCoreDataArr as! [ItemCoreData])
-                
-            }
- 
-            //UNAnvaliabe Internet
-        case .unavailable , .none:
-          homeViewModel.recommendedItemsCoreDataArr = CoreDataManager.fetchAllItems()
-            homeViewModel.mostRecentItemsCoreDataArr = CoreDataManager.fetchAllItems()
-
-            print("Nooooooo")
- 
-        }
-        
-    }
+               }}
+     
+   
+       }
+    
         override func viewWillAppear(_ animated: Bool) {
                NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(note:)), name: .reachabilityChanged, object: reachability)
                do {
@@ -71,29 +46,20 @@ class HomeViewController: UIViewController , HomeViewProtocol {
             switch reachability.connection {
                 // INternet
             case .wifi , .cellular:
-                
+                 renderMostRecentCollection()
+                renderRecommendedCollection()
                 homeViewModel.getRecommendedExperienceList()
-                homeViewModel.getMostRecentExperienceList()
-                if homeViewModel.recommendedFlag == true
-                {
-                    homeViewModel.recommendedItemsCoreDataArr = homeViewModel.recommendedList as! [NSManagedObject]
-                    CoreDataManager.insertAllItemsToCoreData(coreDataArr:homeViewModel.recommendedItemsCoreDataArr as! [ItemCoreData])
-                }
-                else
-                {
-                    homeViewModel.mostRecentItemsCoreDataArr = homeViewModel.mostRecentList as! [NSManagedObject]
-                    CoreDataManager.insertAllItemsToCoreData(coreDataArr:homeViewModel.mostRecentItemsCoreDataArr as! [ItemCoreData])
-                    
-                }
-     
-                //UNAnvaliabe Internet
+                homeViewModel.getMostRecentExperienceList()                //UNAnvaliabe Internet
             case .unavailable , .none:
-              homeViewModel.recommendedItemsCoreDataArr = CoreDataManager.fetchAllItems()
-                homeViewModel.mostRecentItemsCoreDataArr = CoreDataManager.fetchAllItems()
-
-                print("Nooooooo")
-     
+                print("offline")
+                renderMostRecentCollection()
+                renderRecommendedCollection()
+                homeViewModel.recommendedItemsCoreDataArr = CoreDataManager.getRecommendListFromcoreData()
+                homeViewModel.mostRecentItemsCoreDataArr = CoreDataManager.getMostRecentListFromcoreData()
+                
             }
+
+          
            }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
@@ -112,7 +78,8 @@ class HomeViewController: UIViewController , HomeViewProtocol {
     func renderMostRecentCollection() {
         self.mostRecentCollectionView.reloadData()
     }
-    
- 
 
+    @IBSegueAction func swiftUIAction(_ coder: NSCoder , sender: Any?, segueIdentifier : String?) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: SingleExperienceSwiftUIView())
+    }
 }

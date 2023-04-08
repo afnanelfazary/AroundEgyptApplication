@@ -1,6 +1,0 @@
-framework module Pods_AroundEgyptApplication_AroundEgyptApplicationUITests {
-  umbrella header "Pods-AroundEgyptApplication-AroundEgyptApplicationUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

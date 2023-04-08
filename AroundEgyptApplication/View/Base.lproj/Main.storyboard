@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cbd-nN-ujb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cbd-nN-ujb">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -23,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="104.58015267175573" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="1679" y="637"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="1Cj-eh-M66">
@@ -57,7 +58,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ID7-Sh-JuD">
-                                <rect key="frame" x="16" y="136" width="346" height="62"/>
+                                <rect key="frame" x="16" y="136" width="301" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="ZGK-Tp-qTF"/>
                                 </constraints>
@@ -65,254 +66,254 @@
                                     <fragment content="Now">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="you">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="can">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="explore">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="any">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="experience">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="in">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="360">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="degrees">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="and">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="get">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="all">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="the">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="details">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="about">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="it">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="all">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="in">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="one">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="place.">
                                         <attributes>
                                             <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
                                         </attributes>
                                     </fragment>
@@ -346,11 +347,11 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sx-IN-Lck">
-                                                    <rect key="frame" x="17" y="158" width="37" height="21"/>
+                                                    <rect key="frame" x="17" y="158" width="36" height="21"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
                                                             <attributes>
-                                                                <font key="NSFont" size="16" name="AppleSDGothicNeo-SemiBold"/>
+                                                                <font key="NSFont" size="15" name="AppleSDGothicNeo-Bold"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -404,21 +405,21 @@
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsd-hc-2Ai">
-                                                    <rect key="frame" x="63" y="115" width="66" height="20.666666666666657"/>
+                                                    <rect key="frame" x="63" y="115" width="66" height="20"/>
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
                                                             <attributes>
                                                                 <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="17" name="AppleSDGothicNeo-SemiBold"/>
+                                                                <font key="NSFont" size="16" name="AppleSDGothicNeo-Bold"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pB3-hu-hPm">
-                                                    <rect key="frame" x="268.66666666666669" y="157.33333333333334" width="41.333333333333314" height="20.333333333333343"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="272.66666666666669" y="158.66666666666666" width="37.333333333333314" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -495,14 +496,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RNb-FH-ODF">
-                                                    <rect key="frame" x="8" y="2" width="349" height="139"/>
+                                                    <rect key="frame" x="8" y="2" width="349" height="138.66666666666666"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9P-ci-7ja">
-                                                    <rect key="frame" x="16.999999999999996" y="150" width="35.666666666666657" height="19"/>
+                                                    <rect key="frame" x="17" y="150.33333333333334" width="36" height="18"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
                                                             <attributes>
-                                                                <font key="NSFont" size="16" name="AppleSDGothicNeo-Medium"/>
+                                                                <font key="NSFont" size="15" name="AppleSDGothicNeo-Bold"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -520,12 +521,12 @@
                                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZn-hN-BGt">
-                                                    <rect key="frame" x="64" y="110.66666666666667" width="69" height="21.000000000000014"/>
+                                                    <rect key="frame" x="64" y="112.33333333333333" width="69" height="19.333333333333329"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
                                                             <attributes>
                                                                 <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="17" name="AppleSDGothicNeo-SemiBold"/>
+                                                                <font key="NSFont" size="16" name="AppleSDGothicNeo-Bold"/>
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
@@ -533,7 +534,7 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAX-5d-xdh">
                                                     <rect key="frame" x="258" y="150" width="43.333333333333314" height="16"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -600,7 +601,7 @@
                             <constraint firstItem="cNI-Fh-3Ti" firstAttribute="trailing" secondItem="ZEp-ou-o04" secondAttribute="trailing" constant="106.33333333333331" id="eYs-Sa-reH"/>
                             <constraint firstItem="ID7-Sh-JuD" firstAttribute="leading" secondItem="dbv-fA-GI5" secondAttribute="leading" id="hhI-iD-QIS"/>
                             <constraint firstItem="cNI-Fh-3Ti" firstAttribute="trailing" secondItem="dbv-fA-GI5" secondAttribute="trailing" constant="274.66666666666669" id="jqn-Kx-Jkr"/>
-                            <constraint firstItem="cNI-Fh-3Ti" firstAttribute="trailing" secondItem="ID7-Sh-JuD" secondAttribute="trailing" constant="31" id="lLI-T7-YIl"/>
+                            <constraint firstItem="cNI-Fh-3Ti" firstAttribute="trailing" secondItem="ID7-Sh-JuD" secondAttribute="trailing" constant="76" id="lLI-T7-YIl"/>
                             <constraint firstAttribute="bottom" secondItem="XhC-2B-gAS" secondAttribute="bottom" constant="-12" id="leM-QH-jcF"/>
                             <constraint firstItem="Un6-5u-bk9" firstAttribute="trailing" secondItem="cNI-Fh-3Ti" secondAttribute="trailing" constant="-23" id="oPP-Zg-te4"/>
                             <constraint firstItem="ZEp-ou-o04" firstAttribute="top" secondItem="ID7-Sh-JuD" secondAttribute="bottom" constant="36" id="u1N-hM-CiV"/>
@@ -615,11 +616,20 @@
                     <connections>
                         <outlet property="mostRecentCollectionView" destination="XhC-2B-gAS" id="Mom-rC-392"/>
                         <outlet property="recommendedCollectionView" destination="Un6-5u-bk9" id="cXr-Lt-fqL"/>
+                        <segue destination="RjO-Uw-yNb" kind="presentation" identifier="SwifitUISegue" destinationCreationSelector="swiftUIAction:" id="cAi-0B-ehf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fw5-jf-qj4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1698.4732824427481" y="-35.211267605633807"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="W42-hF-AoK">
+            <objects>
+                <hostingController id="RjO-Uw-yNb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qif-WG-87W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600" y="-33"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="STy-Eg-uG7">

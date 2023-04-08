@@ -11,6 +11,13 @@ class ExperiencesListModel : Decodable {
     var data: [DataModel]
     
 }
+
+class SingleExperienceModel : Decodable {
+    var meta: MetaModel
+    var data: DataModel
+    
+}
+
 class MetaModel : Decodable
 {
     var code : Int

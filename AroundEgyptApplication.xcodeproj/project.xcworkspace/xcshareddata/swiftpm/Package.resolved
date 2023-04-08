@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "fd87f7ce7461197ea5af6e4a865168b8fc913ee0"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher.git",
+      "state" : {
+        "revision" : "af4be924ad984cf4d16f4ae4df424e79a443d435",
+        "version" : "7.6.2"
+      }
+    },
+    {
+      "identity" : "reachability.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ashleymills/Reachability.swift",
+      "state" : {
+        "revision" : "c01bbdf2d633cf049ae1ed1a68a2020a8bda32e2",
+        "version" : "5.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}

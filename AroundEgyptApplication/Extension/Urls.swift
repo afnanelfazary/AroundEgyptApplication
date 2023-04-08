@@ -8,8 +8,7 @@
 import Foundation
 
  enum apiLinks : String {
- 
-    case recommendedListAPI = "/api/v2/experiences?filter[recommended]=true"
+     case recommendedListAPI = "/api/v2/experiences?filter[recommended]=true"
     case mostRecentListAPI = "/api/v2/experiences"
     case SearchAPI = "/api/v2/experiences?filter[title]={search_text}"
     case singleExperienceAPI = "/api/v2/experiences/{id}"
