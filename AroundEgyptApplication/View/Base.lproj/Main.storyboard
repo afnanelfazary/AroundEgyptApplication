@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cbd-nN-ujb">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AroundEgyptApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679" y="637"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="1Cj-eh-M66">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="cxa-eP-jM6" customClass="HomeViewController" customModule="AroundEgyptApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zJd-aN-IKu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbv-fA-GI5">
+                                <rect key="frame" x="15.999999999999993" y="103" width="102.33333333333331" height="26.666666666666657"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Welcome">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="AppleSDGothicNeo-Bold"/>
+                                            <font key="NSOriginalFont" size="18" name="AppleColorEmoji"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="AppleSDGothicNeo-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="!">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="AppleSDGothicNeo-Bold"/>
+                                            <font key="NSOriginalFont" size="18" name="AppleColorEmoji"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ID7-Sh-JuD">
+                                <rect key="frame" x="16" y="136" width="301" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="ZGK-Tp-qTF"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Now">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="you">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="can">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="explore">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="any">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="experience">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="in">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="360">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="degrees">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="and">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="get">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="all">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="the">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="details">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="about">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="it">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="all">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="in">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="one">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="place.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17125808551747312" green="0.17125808551747312" blue="0.17125808551747312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
+                                            <font key="NSOriginalFont" size="17" name="AppleBraille-Outline6Dot"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Un6-5u-bk9">
+                                <rect key="frame" x="0.0" y="258" width="370" height="214"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="Mpd-Uy-kS5"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H8u-ah-fOw">
+                                    <size key="itemSize" width="365" height="187"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="recommendedItem" id="6sK-C7-YDp" customClass="RecommendedCollectionViewCell" customModule="AroundEgyptApplication" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="13.666666666666666" width="365" height="187"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Pqm-zF-NdL">
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="187"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lpS-IW-tDg">
+                                                    <rect key="frame" x="17" y="2" width="340" height="144.66666666666666"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="144.66666666666666" id="pwM-Vi-xFy"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sx-IN-Lck">
+                                                    <rect key="frame" x="17" y="158" width="36" height="21"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Label">
+                                                            <attributes>
+                                                                <font key="NSFont" size="15" name="AppleSDGothicNeo-Bold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZG-fW-KGV">
+                                                    <rect key="frame" x="304.33333333333331" y="151" width="50.666666666666686" height="33"/>
+                                                    <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system"/>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOr-zz-RxI">
+                                                    <rect key="frame" x="35" y="8" width="165" height="27"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mAe-5Z-uCh">
+                                                            <rect key="frame" x="10" y="6.6666666666666643" width="27" height="16.333333333333336"/>
+                                                            <color key="tintColor" red="0.94509803921568625" green="0.52941176470588236" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="27" id="nhy-bQ-pCe"/>
+                                                            </constraints>
+                                                            <imageReference key="image" image="star.fill" catalog="system" symbolScale="small"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0M-eu-Klf">
+                                                            <rect key="frame" x="37" y="8" width="117" height="14.333333333333336"/>
+                                                            <attributedString key="attributedText">
+                                                                <fragment content="RECOMMENDED">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="14" name="Copperplate-Bold"/>
+                                                                        <font key="NSOriginalFont" size="17" name="AppleColorEmoji"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.46576401283001079" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="mAe-5Z-uCh" firstAttribute="leading" secondItem="wOr-zz-RxI" secondAttribute="leading" constant="10" id="6iW-QA-sYU"/>
+                                                        <constraint firstAttribute="height" constant="27" id="EkU-sn-5ri"/>
+                                                        <constraint firstItem="mAe-5Z-uCh" firstAttribute="centerY" secondItem="F0M-eu-Klf" secondAttribute="centerY" id="Iro-QU-FkC"/>
+                                                        <constraint firstItem="F0M-eu-Klf" firstAttribute="centerY" secondItem="wOr-zz-RxI" secondAttribute="centerY" constant="1.6666666666666714" id="JcB-qp-qhb"/>
+                                                        <constraint firstItem="F0M-eu-Klf" firstAttribute="leading" secondItem="mAe-5Z-uCh" secondAttribute="trailing" id="hJz-kT-rBV"/>
+                                                        <constraint firstAttribute="trailing" secondItem="F0M-eu-Klf" secondAttribute="trailing" constant="11" id="hXv-LM-2zP"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye.fill" catalog="system" id="S7h-RF-Dkf">
+                                                    <rect key="frame" x="24" y="117.99999999999955" width="42" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsd-hc-2Ai">
+                                                    <rect key="frame" x="63" y="115" width="66" height="20"/>
+                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Label">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="16" name="AppleSDGothicNeo-Bold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pB3-hu-hPm">
+                                                    <rect key="frame" x="272.66666666666669" y="158.66666666666666" width="37.333333333333314" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wOr-zz-RxI" firstAttribute="leading" secondItem="Pqm-zF-NdL" secondAttribute="leading" constant="35" id="2Qo-k6-5Sb"/>
+                                                <constraint firstItem="S7h-RF-Dkf" firstAttribute="leading" secondItem="mAe-5Z-uCh" secondAttribute="leading" constant="-21" id="7qO-z3-rKJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="gsd-hc-2Ai" secondAttribute="trailing" constant="236" id="CzB-tY-SDX"/>
+                                                <constraint firstItem="2ZG-fW-KGV" firstAttribute="leading" secondItem="pB3-hu-hPm" secondAttribute="trailing" constant="-5.6666666666666856" id="I45-Fk-OgA"/>
+                                                <constraint firstItem="pB3-hu-hPm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3sx-IN-Lck" secondAttribute="trailing" constant="8" symbolic="YES" id="Ipv-og-pbg"/>
+                                                <constraint firstItem="gsd-hc-2Ai" firstAttribute="top" secondItem="F0M-eu-Klf" secondAttribute="bottom" constant="84.666666666666657" id="OH8-rv-Yl4"/>
+                                                <constraint firstItem="2ZG-fW-KGV" firstAttribute="centerY" secondItem="pB3-hu-hPm" secondAttribute="centerY" id="QeG-9J-Fev"/>
+                                                <constraint firstItem="3sx-IN-Lck" firstAttribute="centerY" secondItem="pB3-hu-hPm" secondAttribute="centerY" constant="1" id="SWS-Rz-VsW"/>
+                                                <constraint firstAttribute="trailing" secondItem="wOr-zz-RxI" secondAttribute="trailing" constant="165" id="VMN-zx-oY1"/>
+                                                <constraint firstItem="gsd-hc-2Ai" firstAttribute="leading" secondItem="S7h-RF-Dkf" secondAttribute="trailing" constant="-3" id="Xy9-xE-loN"/>
+                                                <constraint firstAttribute="trailing" secondItem="2ZG-fW-KGV" secondAttribute="trailing" constant="10" id="YCT-bO-Nb9"/>
+                                                <constraint firstItem="2ZG-fW-KGV" firstAttribute="top" secondItem="lpS-IW-tDg" secondAttribute="bottom" constant="4.3333333333333428" id="aW1-U1-jyE"/>
+                                                <constraint firstItem="wOr-zz-RxI" firstAttribute="top" secondItem="Pqm-zF-NdL" secondAttribute="top" constant="8" id="azw-bv-fU6"/>
+                                                <constraint firstItem="S7h-RF-Dkf" firstAttribute="leading" secondItem="3sx-IN-Lck" secondAttribute="leading" constant="7" id="coJ-Hw-bed"/>
+                                                <constraint firstAttribute="bottom" secondItem="3sx-IN-Lck" secondAttribute="bottom" constant="8" id="fhf-iN-FjK"/>
+                                                <constraint firstItem="lpS-IW-tDg" firstAttribute="leading" secondItem="Pqm-zF-NdL" secondAttribute="leading" constant="17" id="jpz-PJ-rtj"/>
+                                                <constraint firstItem="lpS-IW-tDg" firstAttribute="top" secondItem="Pqm-zF-NdL" secondAttribute="top" constant="2" id="pW8-Xf-kCK"/>
+                                                <constraint firstItem="3sx-IN-Lck" firstAttribute="top" secondItem="lpS-IW-tDg" secondAttribute="bottom" constant="11.333333333332888" id="wc4-ZV-5xb"/>
+                                                <constraint firstItem="lpS-IW-tDg" firstAttribute="centerX" secondItem="Pqm-zF-NdL" secondAttribute="centerX" constant="4.5" id="xgF-oD-eDR"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="365" height="187"/>
+                                        <connections>
+                                            <outlet property="experienceNameLabel" destination="3sx-IN-Lck" id="Kbm-pc-3QL"/>
+                                            <outlet property="likeNumLabel" destination="pB3-hu-hPm" id="YXA-Sw-bCy"/>
+                                            <outlet property="recommendedImageView" destination="lpS-IW-tDg" id="1jN-N4-Q7o"/>
+                                            <outlet property="recommendedRoundView" destination="wOr-zz-RxI" id="HTM-vd-TcG"/>
+                                            <outlet property="viewsNumLabel" destination="gsd-hc-2Ai" id="bTl-Ps-xnh"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="cxa-eP-jM6" id="8Kx-kb-1XL"/>
+                                    <outlet property="delegate" destination="cxa-eP-jM6" id="Oks-Ju-Te9"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTP-G0-vQz">
+                                <rect key="frame" x="16" y="497" width="123" height="26.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26.666666666666686" id="tAV-OQ-SQH"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Most Recent">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="AppleSDGothicNeo-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XhC-2B-gAS">
+                                <rect key="frame" x="0.0" y="532" width="377" height="332"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="332" id="0aZ-Wq-KMe"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JpF-a0-kdH">
+                                    <size key="itemSize" width="365" height="179"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mostRecentItem" id="yGl-Uf-KS7" customClass="MostRecentCollectionViewCell" customModule="AroundEgyptApplication" customModuleProvider="target">
+                                        <rect key="frame" x="6" y="0.0" width="365" height="179"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9nW-Mn-qPZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="179"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RNb-FH-ODF">
+                                                    <rect key="frame" x="8" y="2" width="349" height="138.66666666666666"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g9P-ci-7ja">
+                                                    <rect key="frame" x="17" y="150.33333333333334" width="36" height="18"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Label">
+                                                            <attributes>
+                                                                <font key="NSFont" size="15" name="AppleSDGothicNeo-Bold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCk-bg-1JE">
+                                                    <rect key="frame" x="299.33333333333331" y="147" width="50.666666666666686" height="22"/>
+                                                    <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system"/>
+                                                </button>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye.fill" catalog="system" id="r2F-3d-lkR">
+                                                    <rect key="frame" x="24" y="115" width="36" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZn-hN-BGt">
+                                                    <rect key="frame" x="64" y="112.33333333333333" width="69" height="19.333333333333329"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Label">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="16" name="AppleSDGothicNeo-Bold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAX-5d-xdh">
+                                                    <rect key="frame" x="258" y="150" width="43.333333333333314" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RNb-FH-ODF" firstAttribute="centerX" secondItem="9nW-Mn-qPZ" secondAttribute="centerX" id="1eL-Z9-y72"/>
+                                                <constraint firstItem="EAX-5d-xdh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="g9P-ci-7ja" secondAttribute="trailing" constant="8" symbolic="YES" id="4GW-pW-FRH"/>
+                                                <constraint firstItem="kZn-hN-BGt" firstAttribute="leading" secondItem="r2F-3d-lkR" secondAttribute="trailing" constant="4" id="BFv-NN-gaX"/>
+                                                <constraint firstItem="EAX-5d-xdh" firstAttribute="leading" secondItem="9nW-Mn-qPZ" secondAttribute="leading" constant="258" id="Eg1-bw-c04"/>
+                                                <constraint firstItem="sCk-bg-1JE" firstAttribute="top" secondItem="EAX-5d-xdh" secondAttribute="top" constant="-3" id="H0g-jc-7fQ"/>
+                                                <constraint firstItem="sCk-bg-1JE" firstAttribute="trailing" secondItem="9nW-Mn-qPZ" secondAttribute="trailingMargin" constant="-7" id="HWk-aP-cqJ"/>
+                                                <constraint firstItem="RNb-FH-ODF" firstAttribute="top" secondItem="9nW-Mn-qPZ" secondAttribute="top" constant="2" id="QKL-4B-vHa"/>
+                                                <constraint firstAttribute="bottom" secondItem="EAX-5d-xdh" secondAttribute="bottom" constant="13" id="TPh-iz-Svb"/>
+                                                <constraint firstItem="g9P-ci-7ja" firstAttribute="baseline" secondItem="sCk-bg-1JE" secondAttribute="baseline" id="bFM-OW-j4Y"/>
+                                                <constraint firstItem="g9P-ci-7ja" firstAttribute="leading" secondItem="RNb-FH-ODF" secondAttribute="leading" constant="8.9999999999999964" id="dMN-uw-rLn"/>
+                                                <constraint firstItem="EAX-5d-xdh" firstAttribute="top" secondItem="RNb-FH-ODF" secondAttribute="bottom" constant="9.3333333333333428" id="hlh-G3-jHx"/>
+                                                <constraint firstItem="sCk-bg-1JE" firstAttribute="leading" secondItem="EAX-5d-xdh" secondAttribute="trailing" constant="-1.9999999999999432" id="j5w-xs-cGd"/>
+                                                <constraint firstAttribute="bottom" secondItem="sCk-bg-1JE" secondAttribute="bottom" constant="10" id="kPa-8B-0c1"/>
+                                                <constraint firstAttribute="trailing" secondItem="kZn-hN-BGt" secondAttribute="trailing" constant="232.00000000000011" id="mw6-fg-4hb"/>
+                                                <constraint firstItem="r2F-3d-lkR" firstAttribute="top" secondItem="RNb-FH-ODF" secondAttribute="bottom" constant="-27.666666666666657" id="owJ-Iq-iIs"/>
+                                                <constraint firstAttribute="trailing" secondItem="RNb-FH-ODF" secondAttribute="trailing" constant="8" id="pXu-4R-ptg"/>
+                                                <constraint firstItem="sCk-bg-1JE" firstAttribute="bottom" secondItem="EAX-5d-xdh" secondAttribute="bottom" constant="3" id="rK8-mc-H0X"/>
+                                                <constraint firstItem="RNb-FH-ODF" firstAttribute="leading" secondItem="r2F-3d-lkR" secondAttribute="trailing" constant="-52" id="ulR-k8-AtH"/>
+                                                <constraint firstItem="kZn-hN-BGt" firstAttribute="bottom" secondItem="RNb-FH-ODF" secondAttribute="bottom" constant="-8.9999999999999147" id="x3z-nq-hIs"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="365" height="179"/>
+                                        <connections>
+                                            <outlet property="LikesNumLabel" destination="EAX-5d-xdh" id="qcL-ex-8xd"/>
+                                            <outlet property="experienceNameLabel" destination="g9P-ci-7ja" id="Bzs-7h-hUT"/>
+                                            <outlet property="rexperienceImage" destination="RNb-FH-ODF" id="8DS-Cb-saT"/>
+                                            <outlet property="viewsNumLabel" destination="kZn-hN-BGt" id="7JS-Ch-IdU"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="cxa-eP-jM6" id="mn2-xc-r7h"/>
+                                    <outlet property="delegate" destination="cxa-eP-jM6" id="haP-lE-PgI"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEp-ou-o04">
+                                <rect key="frame" x="16" y="234" width="270.66666666666669" height="26.666666666666686"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Recommended Experiences">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="AppleSDGothicNeo-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cNI-Fh-3Ti"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XhC-2B-gAS" firstAttribute="trailing" secondItem="cNI-Fh-3Ti" secondAttribute="trailing" constant="-16" id="6sb-Fj-v7M"/>
+                            <constraint firstItem="HTP-G0-vQz" firstAttribute="top" secondItem="Un6-5u-bk9" secondAttribute="bottom" constant="25" id="7a3-zi-TgP"/>
+                            <constraint firstItem="ID7-Sh-JuD" firstAttribute="top" secondItem="cNI-Fh-3Ti" secondAttribute="top" constant="33" id="A1H-Um-nLn"/>
+                            <constraint firstItem="Un6-5u-bk9" firstAttribute="leading" secondItem="cNI-Fh-3Ti" secondAttribute="leading" id="J8J-mJ-z0I"/>
+                            <constraint firstItem="HTP-G0-vQz" firstAttribute="leading" secondItem="cNI-Fh-3Ti" secondAttribute="leading" constant="16" id="OkS-JD-32W"/>
+                            <constraint firstItem="ZEp-ou-o04" firstAttribute="leading" secondItem="cNI-Fh-3Ti" secondAttribute="leading" constant="16" id="RWw-p6-AWT"/>
+                            <constraint firstItem="cNI-Fh-3Ti" firstAttribute="top" secondItem="dbv-fA-GI5" secondAttribute="top" id="Yhe-8u-V4M"/>
+                            <constraint firstItem="HTP-G0-vQz" firstAttribute="leading" secondItem="dbv-fA-GI5" secondAttribute="trailing" constant="-102.33333333333331" id="b1c-Sp-MNd"/>
+                            <constraint firstItem="cNI-Fh-3Ti" firstAttribute="trailing" secondItem="ZEp-ou-o04" secondAttribute="trailing" constant="106.33333333333331" id="eYs-Sa-reH"/>
+                            <constraint firstItem="ID7-Sh-JuD" firstAttribute="leading" secondItem="dbv-fA-GI5" secondAttribute="leading" id="hhI-iD-QIS"/>
+                            <constraint firstItem="cNI-Fh-3Ti" firstAttribute="trailing" secondItem="dbv-fA-GI5" secondAttribute="trailing" constant="274.66666666666669" id="jqn-Kx-Jkr"/>
+                            <constraint firstItem="cNI-Fh-3Ti" firstAttribute="trailing" secondItem="ID7-Sh-JuD" secondAttribute="trailing" constant="76" id="lLI-T7-YIl"/>
+                            <constraint firstAttribute="bottom" secondItem="XhC-2B-gAS" secondAttribute="bottom" constant="-12" id="leM-QH-jcF"/>
+                            <constraint firstItem="Un6-5u-bk9" firstAttribute="trailing" secondItem="cNI-Fh-3Ti" secondAttribute="trailing" constant="-23" id="oPP-Zg-te4"/>
+                            <constraint firstItem="ZEp-ou-o04" firstAttribute="top" secondItem="ID7-Sh-JuD" secondAttribute="bottom" constant="36" id="u1N-hM-CiV"/>
+                            <constraint firstItem="XhC-2B-gAS" firstAttribute="top" secondItem="HTP-G0-vQz" secondAttribute="bottom" constant="8.3300000000000001" id="xnS-w8-35z"/>
+                            <constraint firstItem="XhC-2B-gAS" firstAttribute="leading" secondItem="cNI-Fh-3Ti" secondAttribute="leading" id="y3B-xk-Aqm"/>
+                            <constraint firstItem="Un6-5u-bk9" firstAttribute="top" secondItem="ZEp-ou-o04" secondAttribute="bottom" constant="-2.6666666666666288" id="y9A-K7-0ho"/>
+                            <constraint firstItem="dbv-fA-GI5" firstAttribute="leading" secondItem="cNI-Fh-3Ti" secondAttribute="leading" constant="16" id="yuB-AK-WxA"/>
+                            <constraint firstItem="cNI-Fh-3Ti" firstAttribute="trailing" secondItem="HTP-G0-vQz" secondAttribute="trailing" constant="254" id="zwW-1U-TNr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mqD-b0-OAM"/>
+                    <connections>
+                        <outlet property="mostRecentCollectionView" destination="XhC-2B-gAS" id="Mom-rC-392"/>
+                        <outlet property="recommendedCollectionView" destination="Un6-5u-bk9" id="cXr-Lt-fqL"/>
+                        <segue destination="RjO-Uw-yNb" kind="presentation" identifier="SwifitUISegue" destinationCreationSelector="swiftUIAction:" id="cAi-0B-ehf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fw5-jf-qj4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1698.4732824427481" y="-35.211267605633807"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="W42-hF-AoK">
+            <objects>
+                <hostingController id="RjO-Uw-yNb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qif-WG-87W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600" y="-33"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="STy-Eg-uG7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cbd-nN-ujb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g5a-K6-nbe">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cxa-eP-jM6" kind="relationship" relationship="rootViewController" id="bal-dE-xq3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nQd-CG-7hJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771.75572519083971" y="-35.211267605633807"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eye.fill" catalog="system" width="128" height="80"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
