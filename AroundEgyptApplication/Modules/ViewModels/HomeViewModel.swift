@@ -12,8 +12,7 @@ class HomeViewModel{
     var baseURL : String = "https://aroundegypt.34ml.com"
     var recommendedFlag : Bool = false
     var bindResultToHomeView : (() -> ()) = {}
-    //var jsonArray : [NSManagedObject] = []
-
+ 
     
     var recommendedItemsCoreDataArr :[NSManagedObject] = [] {
         didSet{
@@ -39,6 +38,14 @@ class HomeViewModel{
             bindResultToHomeView()
         }
     }
+    
+    var searchList: [DataModel] = []{
+        didSet{
+        //  bind the search result
+            bindResultToHomeView()
+       }
+    }
+    
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
     func getRecommendedExperienceList(){
