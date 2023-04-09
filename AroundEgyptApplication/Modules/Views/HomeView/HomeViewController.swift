@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Kingfisher
 import Reachability
 import CoreData
 import SwiftUI
@@ -17,15 +16,23 @@ protocol HomeViewProtocol : AnyObject {
 }
 class HomeViewController: UIViewController , HomeViewProtocol {
     var homeViewModel : HomeViewModel!
+ 
     let reachability = try! Reachability()
     var searching = false
+    var searchingRecommended = false
+    var searchingMostRecent = false
+
     let searchController = UISearchController(searchResultsController: nil)
+    //pass likes & vies Num To SingleExperience Screen
+    var viewsNum : Int = 0
+    var likesNum : Int = 0
     @IBOutlet weak var recommendedCollectionView : UICollectionView!
     @IBOutlet weak var mostRecentCollectionView : UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
         homeViewModel = HomeViewModel()
+ 
         //search  bar
         navigationItem.searchController = searchController
         configureSearchController ()
@@ -33,9 +40,10 @@ class HomeViewController: UIViewController , HomeViewProtocol {
             DispatchQueue.main.async{
                 self?.renderRecommendedCollection()
                 self?.renderMostRecentCollection()
-            }}
-        
-        
+            }
+        }
+         renderMostRecentCollection()
+        renderRecommendedCollection()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,14 +60,16 @@ class HomeViewController: UIViewController , HomeViewProtocol {
             renderMostRecentCollection()
             renderRecommendedCollection()
             homeViewModel.getRecommendedExperienceList()
-            homeViewModel.getMostRecentExperienceList()                //UNAnvaliabe Internet
+            homeViewModel.getMostRecentExperienceList()
+ 
+            //UNAnvaliabe Internet
         case .unavailable , .none:
             print("offline")
+           
+            homeViewModel.recommendedItemsCoreDataArr = homeViewModel.getRecommendListFromcoreData()
+            homeViewModel.mostRecentItemsCoreDataArr = homeViewModel.getMostRecentListFromcoreData()
             renderMostRecentCollection()
             renderRecommendedCollection()
-            homeViewModel.recommendedItemsCoreDataArr = CoreDataManager.getRecommendListFromcoreData()
-            homeViewModel.mostRecentItemsCoreDataArr = CoreDataManager.getMostRecentListFromcoreData()
-            
         }
         
         

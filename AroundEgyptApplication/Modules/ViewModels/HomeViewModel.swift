@@ -45,17 +45,23 @@ class HomeViewModel{
             bindResultToHomeView()
        }
     }
-    
+    var mostRecentSearchList: [DataModel] = []{
+        didSet{
+        //  bind the search result
+            bindResultToHomeView()
+       }
+    }
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
     func getRecommendedExperienceList(){
- 
+        
         NetworkManger.fetchData(apiLink: baseURL+apiLinks.recommendedListAPI.rawValue)
         {[weak self] (data: ExperiencesListModel?) in
-                 self?.recommendedList = data?.data ?? []
+            self?.recommendedList = data?.data ?? []
+            //save json array in core data
             for json in self!.recommendedList {
-
                 let entity = NSEntityDescription.insertNewObject(forEntityName: "RecommendedExperienceList", into: self!.context)
+                entity.setValue(json.id, forKey: "id")
                 entity.setValue(json.title, forKey: "title")
                 entity.setValue(json.likes_no, forKey: "likes_no")
                 entity.setValue(json.views_no, forKey: "views_no")
@@ -70,15 +76,9 @@ class HomeViewModel{
                 }
             }
             
-            
-        }
- 
-        }
-    
+        }}
+  
 
-    
-    
-    
     func getMostRecentExperienceList(){
         
         NetworkManger.fetchData(apiLink: baseURL+apiLinks.mostRecentListAPI.rawValue)
@@ -86,8 +86,9 @@ class HomeViewModel{
  
                 self?.mostRecentList = data?.data ?? []
             for json in self!.mostRecentList {
-
+                // store json array in core adata
                 let entity = NSEntityDescription.insertNewObject(forEntityName: "MostRecentExperienceList", into: self!.context)
+                entity.setValue(json.id, forKey: "id")
                 entity.setValue(json.title, forKey: "title")
                 entity.setValue(json.likes_no, forKey: "likes_no")
                 entity.setValue(json.views_no, forKey: "views_no")
@@ -103,8 +104,29 @@ class HomeViewModel{
             }
                         }
         }
- 
-   
+    
+  func getRecommendListFromcoreData ()->[NSManagedObject]
+    {
+        var context :NSManagedObjectContext?
+        var arr: [NSManagedObject]? = [NSManagedObject]()
+        let appDelgate = UIApplication.shared.delegate as! AppDelegate
+         context = appDelgate.persistentContainer.viewContext
+        
+        let fetchReq = NSFetchRequest<NSManagedObject>(entityName: "RecommendedExperienceList")
+        arr  = try? context?.fetch(fetchReq)
+        return arr  ?? []
+    }
+      func getMostRecentListFromcoreData ()->[NSManagedObject]
+    {
+         var context :NSManagedObjectContext?
+       var arr: [NSManagedObject]? = [NSManagedObject]()
+        let appDelgate = UIApplication.shared.delegate as! AppDelegate
+         context = appDelgate.persistentContainer.viewContext
+        
+        let fetchReq = NSFetchRequest<NSManagedObject>(entityName: "MostRecentExperienceList")
+        arr  = try? context?.fetch(fetchReq)
+        return arr  ?? []
+    }
          }
     
     

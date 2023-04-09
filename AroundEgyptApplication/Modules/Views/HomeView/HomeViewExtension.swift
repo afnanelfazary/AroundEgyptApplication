@@ -7,17 +7,21 @@
 
 import Foundation
 import UIKit
-import Kingfisher
 import SwiftUI
+import Kingfisher
 extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout , UISearchBarDelegate , UISearchResultsUpdating {
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if searching {
- 
+        if searching && searchingRecommended {
+            
             return homeViewModel.searchList.count
         }
-        else
+         else  if  searching && searchingMostRecent {
+                return homeViewModel.mostRecentSearchList.count
+        }
+
+        else if searching == false
         {
             
             switch reachability.connection {
@@ -50,9 +54,9 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
         if collectionView == recommendedCollectionView {
             let item = collectionView.dequeueReusableCell(withReuseIdentifier: "recommendedItem", for: indexPath) as! RecommendedCollectionViewCell
             item.recommendedRoundView.layer.cornerRadius = 13
-
-            if searching{
-                item.experienceNameLabel.text =   homeViewModel.searchList[indexPath.row].title
+            
+            if searching && searchingRecommended{
+                item.experienceNameLabel.text = homeViewModel.searchList[indexPath.row].title ?? ""
                 item.viewsNumLabel.text = "\(homeViewModel.searchList[indexPath.row].views_no ?? 1)"
                 item.likeNumLabel.text = "\(homeViewModel.searchList[indexPath.row].likes_no ?? 1)"
                 
@@ -73,7 +77,7 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
                 switch reachability.connection {
                     // INternet
                 case .wifi , .cellular:
-                    item.experienceNameLabel.text = homeViewModel.recommendedList[indexPath.row].title
+                    item.experienceNameLabel.text = homeViewModel.recommendedList[indexPath.row].title  ?? ""
                     item.viewsNumLabel.text = "\(homeViewModel.recommendedList[indexPath.row].views_no ?? 1)"
                     item.likeNumLabel.text = "\(homeViewModel.recommendedList[indexPath.row].likes_no ?? 1)"
                     
@@ -111,12 +115,12 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
         }
         
         let item = collectionView.dequeueReusableCell(withReuseIdentifier: "mostRecentItem", for: indexPath) as! MostRecentCollectionViewCell
-        if searching{
-            item.experienceNameLabel.text = homeViewModel.searchList[indexPath.row].title
-            item.viewsNumLabel.text = "\( homeViewModel.searchList[indexPath.row].views_no ?? 1)"
-            item.LikesNumLabel.text = "\(homeViewModel.searchList[indexPath.row].likes_no ?? 1)"
+        if searching  && searchingMostRecent {
+            item.experienceNameLabel.text = homeViewModel.mostRecentSearchList[indexPath.row].title ?? ""
+            item.viewsNumLabel.text = "\( homeViewModel.mostRecentSearchList[indexPath.row].views_no ?? 1)"
+            item.LikesNumLabel.text = "\(homeViewModel.mostRecentSearchList[indexPath.row].likes_no ?? 1)"
             
-            let mostRecentsImageUrl = URL( string: homeViewModel.searchList[indexPath.row].cover_photo ??  "1")
+            let mostRecentsImageUrl = URL( string: homeViewModel.mostRecentSearchList[indexPath.row].cover_photo ??  "1")
             let processor = RoundCornerImageProcessor(cornerRadius: 9)
             
             if (mostRecentsImageUrl != nil)
@@ -178,19 +182,49 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let mySwiftUIView = SingleExperienceSwiftUIView( )
+        
         let hostingController = UIHostingController(rootView: mySwiftUIView)
         if collectionView == recommendedCollectionView{
-            
-            let experienceId = homeViewModel.recommendedList[indexPath.row].id!
-            mySwiftUIView.singleExperienceViewModel.Id = experienceId
-            navigationController?.pushViewController(hostingController, animated: true)
+            switch reachability.connection {
+                // INternet
+            case .wifi , .cellular:
+                let experienceId = homeViewModel.recommendedList[indexPath.row].id!
+                mySwiftUIView.singleExperienceViewModel.Id = experienceId
+            case .unavailable , .none:
+                
+                mySwiftUIView.singleExperienceViewModel.experienceName = homeViewModel.recommendedItemsCoreDataArr[indexPath.row].value(forKey: "title") as? String
+                likesNum = homeViewModel.mostRecentItemsCoreDataArr[indexPath.row].value(forKey: "likes_no") as! Int
+                viewsNum = homeViewModel.mostRecentItemsCoreDataArr[indexPath.row].value(forKey: "views_no") as! Int
+                mySwiftUIView.singleExperienceViewModel.LikeNum = String(likesNum)
+                mySwiftUIView.singleExperienceViewModel.viewsNum = String(viewsNum)
+                mySwiftUIView.singleExperienceViewModel.description = homeViewModel.recommendedItemsCoreDataArr[indexPath.row].value(forKey: "descriptions") as? String
+                mySwiftUIView.singleExperienceViewModel.cover_photo = homeViewModel.recommendedItemsCoreDataArr[indexPath.row].value(forKey: "cover_photo") as? String
+                
+                
+                
+                
+            }
         }
         else if collectionView == mostRecentCollectionView{
-            let experienceId = homeViewModel.mostRecentList[indexPath.row].id!
-            mySwiftUIView.singleExperienceViewModel.Id = experienceId
-            navigationController?.pushViewController(hostingController, animated: true)
             
-        }
+            
+            switch reachability.connection {
+                // INternet
+            case .wifi , .cellular:
+                let experienceId = homeViewModel.mostRecentList[indexPath.row].id!
+                mySwiftUIView.singleExperienceViewModel.Id = experienceId
+            case .unavailable , .none:
+                
+                mySwiftUIView.singleExperienceViewModel.experienceName = homeViewModel.mostRecentItemsCoreDataArr[indexPath.row].value(forKey: "title") as? String
+                likesNum   = homeViewModel.mostRecentItemsCoreDataArr[indexPath.row].value(forKey: "likes_no") as! Int
+                viewsNum  = homeViewModel.mostRecentItemsCoreDataArr[indexPath.row].value(forKey: "views_no") as! Int
+                mySwiftUIView.singleExperienceViewModel.LikeNum = String(likesNum)
+                mySwiftUIView.singleExperienceViewModel.viewsNum = String(viewsNum)
+                mySwiftUIView.singleExperienceViewModel.description = homeViewModel.mostRecentItemsCoreDataArr[indexPath.row].value(forKey: "descriptions") as? String
+                mySwiftUIView.singleExperienceViewModel.cover_photo = homeViewModel.mostRecentItemsCoreDataArr[indexPath.row].value(forKey: "cover_photo") as? String
+            }}
+        navigationController?.pushViewController(hostingController, animated: true)
+        
     }
     func updateSearchResults(for searchController: UISearchController) {
         let searchText = searchController.searchBar.text!
@@ -198,39 +232,54 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
         {
             searching = true
             homeViewModel.searchList.removeAll()
-           
-            for recommendItem in homeViewModel.recommendedList
-            {
-                if   recommendItem.title!.lowercased().contains(searchText.lowercased())
+            homeViewModel.mostRecentSearchList.removeAll()
+       
+                
+                for recommendItem in homeViewModel.recommendedList
                 {
-                    homeViewModel.searchList.append(recommendItem)
+                
+                    if   recommendItem.title!.lowercased().contains(searchText.lowercased())
+                    {
+                        searchingMostRecent = false
+
+                        searchingRecommended = true
+
+                        homeViewModel.searchList.append(recommendItem)
+                    }
                 }
-            }
-            for mostItem in homeViewModel.mostRecentList
-            {
-                if   mostItem.title!.lowercased().contains(searchText.lowercased())
+                for mostItem in homeViewModel.mostRecentList
                 {
-                    homeViewModel.searchList.append(mostItem)
+                 
+                    if   mostItem.title!.lowercased().contains(searchText.lowercased())
+                    {
+                        searchingRecommended = false
+
+                        searchingMostRecent = true
+                        homeViewModel.mostRecentSearchList.append(mostItem)
+                    }
                 }
-            }
+                renderRecommendedCollection()
+                renderMostRecentCollection()
+            
+            
+        }
+        else
+        {
+            searching = false
+            homeViewModel.searchList.removeAll()
+            homeViewModel.searchList = homeViewModel.recommendedList
+            homeViewModel.searchList = homeViewModel.mostRecentList
             renderRecommendedCollection()
             renderMostRecentCollection()
         }
-                else
-                {
-                    searching = false
-                    homeViewModel.searchList.removeAll()
-                    homeViewModel.searchList = homeViewModel.recommendedList
-                    homeViewModel.searchList = homeViewModel.mostRecentList
-                    renderRecommendedCollection()
-                    renderMostRecentCollection()
-                }
     }
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searching = false
         homeViewModel.searchList.removeAll()
+        homeViewModel.mostRecentSearchList.removeAll()
+
         renderRecommendedCollection()
-        renderMostRecentCollection() 
+        renderMostRecentCollection()
     }
     
 }
